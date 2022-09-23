@@ -1,0 +1,106 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 992px) {
+  form {
+    width: 80%;
+  }
+}
+
+.card-img {
+  height: 300px;
+}
+
+.logo img {
+  width: 140px;
+  height: 60px;
+  margin-left: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  animation: Rotate linear 2s;
+  -webkit-animation: Rotate linear 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+ 
+
+}
+
+.card-info {
+  color: transparent;
+  transition:all 1s;
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  -ms-transition:all 1s;
+  -o-transition:all 1s;
+  margin-top: 100px;
+}
+.card-info:hover {
+  color: #fbf9f9;
+  background: rgba(11, 11, 11, 0.446);
+}
+
+.card {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  box-shadow:0 0 15px rgba(255,0,212,0.987);
+  /* animation:cardMove linear 1s;
+  -webkit-animation:cardMove linear 2s; */
+}
+
+.card:hover {
+  z-index: 100;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+@keyframes Rotate {
+  from {
+   transform: rotate(-180deg);
+   -webkit-transform: rotate(-180deg);
+   -moz-transform: rotate(-180deg);
+   -ms-transform: rotate(-180deg);
+   -o-transform: rotate(-180deg);
+}
+  to {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+}
+@keyframes cardMove {
+  from {
+   transform: translateX(-1000px);
+   -webkit-transform: translateX(-1000px);
+   -moz-transform: translateX(-1000px);
+   -ms-transform: translateX(-1000px);
+   -o-transform: translateX(-1000px);
+}
+  to {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+}
